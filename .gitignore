@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+
+# Editor settings
+.vscode/
+.Rproj.user/
+
+# Quarto and notebook execution caches
+.quarto/
+_freeze/
+.ipynb_checkpoints/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# R session files
+.Rhistory
+.RData
+.Ruserdata
+
+# Environment files
+.env
+.venv/
+venv/
+
+# Local archives and temporary files
+*.log
+*.tmp
+*.swp

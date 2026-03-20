@@ -1,0 +1,17 @@
+"movie_title","movie_category","n","mean_rating","sd_rating","ci_low","ci_high"
+"Workers' Strike","Political -- Left (Workers rights / corporate exploitation)",55,2.16363636363636,1.33004645370888,1.81212324626155,2.51514948101118
+"Silicon Circus","Political -- Left (Immigration / undocumented workers)",55,2.30909090909091,1.3726525722757,1.94631757631918,2.67186424186264
+"Under Cover","Political -- Left (LGBTQ+ rights)",55,2.49090909090909,1.95194800394401,1.97503588519767,3.00678229662052
+"Broken Care","Political -- Left (Universal healthcare / medical debt)",55,2.8,1.76802882497032,2.33273412207459,3.26726587792541
+"Critical Hours","Control -- Non-political (Hospital emergency)",55,3.54545454545455,1.05089347908202,3.26771774774278,3.82319134316631
+"Beta Launch","Control -- Non-political (Tech satire / corporate culture)",55,3.58181818181818,1.16572833838873,3.273732098737,3.88990426489937
+"Outsmarted","Political -- Neutral (AI replacing human judgment)",55,3.6,1.29957257930786,3.2565407115417,3.9434592884583
+"The Watchers","Political -- Neutral (Surveillance and privacy)",55,3.6,1.75962959065148,3.13495392502264,4.06504607497736
+"Incident in the Dark","Control -- Non-political (Industrial accident)",55,3.87272727272727,1.01934157133771,3.60332921342528,4.14212533202926
+"Scandals and Secrets","Control -- Non-political (Celebrity scandal / media pressure)",55,3.90909090909091,1.1266588966321,3.61133034601519,4.20685147216663
+"System Failure","Control -- Non-political (Tech malfunction)",55,3.92727272727273,1.03377312244364,3.65406060606061,4.20048484848485
+"In the Shadows","Control -- Non-political (Criminal hunt)",55,4.65454545454545,1.04026673606094,4.37961715991752,4.92947374917338
+"Publicly Cancelled","Political -- Right (Free speech / cancel culture)",55,4.85454545454545,1.88972055369141,4.35511811428751,5.3539727948034
+"Divided We Stand","Political -- Right (Tradition and authority)",55,5.49090909090909,1.80403587950613,5.01412704010711,5.96769114171107
+"Take Back the Streets","Political -- Right (Law and order / policing)",55,5.63636363636364,1.3383743090951,5.28264958051806,5.99007769220921
+"Glory Before Dawn","Political -- Right (Borders and security)",55,5.83636363636364,1.46266672191376,5.44980079288806,6.22292647983921

@@ -1,0 +1,9 @@
+# Normalize text files across platforms
+* text=auto
+
+# Keep common data and markup files diff-friendly
+*.csv text eol=lf
+*.qmd text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf

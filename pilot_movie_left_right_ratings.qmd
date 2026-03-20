@@ -1,0 +1,160 @@
+---
+title: "Pilot Movie Ratings on the Left-Right Scale"
+format:
+  html:
+    theme: cosmo
+    toc: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+main_file <- sort(
+  list.files("pilot_data", pattern = "^main_.*\\.csv$", full.names = TRUE),
+  decreasing = TRUE
+)[1]
+
+if (length(main_file) == 0 || is.na(main_file)) {
+  stop("No pilot_data/main_*.csv file was found.")
+}
+
+main_data <- read.csv(main_file, check.names = FALSE, stringsAsFactors = FALSE)
+
+movie_data <- main_data[
+  !is.na(main_data[["player.movie_political_vibe"]]) &
+    nzchar(main_data[["player.assigned_movie_title"]]),
+  c(
+    "player.assigned_movie_title",
+    "player.assigned_movie_category",
+    "player.movie_political_vibe"
+  )
+]
+
+names(movie_data) <- c("movie_title", "movie_category", "movie_rating")
+movie_data$movie_rating <- as.numeric(movie_data$movie_rating)
+
+summarize_movie <- function(df) {
+  n_ratings <- nrow(df)
+  mean_rating <- mean(df$movie_rating)
+  sd_rating <- stats::sd(df$movie_rating)
+  se_rating <- sd_rating / sqrt(n_ratings)
+  ci_margin <- 1.96 * se_rating
+
+  data.frame(
+    movie_title = df$movie_title[1],
+    movie_category = df$movie_category[1],
+    n = n_ratings,
+    mean_rating = mean_rating,
+    sd_rating = sd_rating,
+    ci_low = mean_rating - ci_margin,
+    ci_high = mean_rating + ci_margin,
+    stringsAsFactors = FALSE
+  )
+}
+
+movie_stats <- do.call(
+  rbind,
+  lapply(split(movie_data, movie_data$movie_title), summarize_movie)
+)
+
+movie_stats <- movie_stats[order(movie_stats$mean_rating, movie_stats$movie_title), ]
+row.names(movie_stats) <- NULL
+
+movie_stats$ci_display <- sprintf("[%.2f, %.2f]", movie_stats$ci_low, movie_stats$ci_high)
+movie_stats$mean_display <- sprintf("%.2f", movie_stats$mean_rating)
+movie_stats$movie_title <- factor(movie_stats$movie_title, levels = movie_stats$movie_title)
+
+write.csv(
+  movie_stats[, c("movie_title", "movie_category", "n", "mean_rating", "sd_rating", "ci_low", "ci_high")],
+  "pilot_movie_left_right_summary.csv",
+  row.names = FALSE
+)
+
+summary_table <- movie_stats[, c("movie_title", "movie_category", "mean_display", "ci_display", "n")]
+names(summary_table) <- c("Movie", "Category", "Mean rating", "95% CI", "N")
+```
+
+This report uses `r basename(main_file)` from `/pilot_data` and orders movies from lower to higher mean placement on the 1 to 7 left-right scale.
+
+## Summary Table
+
+```{r}
+knitr::kable(
+  summary_table,
+  align = c("l", "l", "r", "r", "r"),
+  caption = "Pilot movie ratings on the left-right scale"
+)
+```
+
+## Chart
+
+```{r fig.width=12, fig.height=8}
+x_pos <- seq_len(nrow(movie_stats))
+
+par(mar = c(10, 5, 2, 1) + 0.1, las = 1)
+
+plot(
+  x_pos,
+  movie_stats$mean_rating,
+  type = "n",
+  xaxt = "n",
+  xlab = "",
+  ylab = "Mean rating (95% CI)",
+  ylim = c(1, 7),
+  xlim = c(0.4, nrow(movie_stats) + 0.6)
+)
+
+usr <- par("usr")
+rect(
+  xleft = usr[1],
+  ybottom = 3.75,
+  xright = usr[2],
+  ytop = 4.25,
+  col = grDevices::adjustcolor("grey70", alpha.f = 0.2),
+  border = NA
+)
+
+abline(h = seq(1, 7, by = 1), col = "grey85", lwd = 1.2)
+abline(h = seq(1.5, 6.5, by = 1), col = "grey92", lwd = 0.8)
+abline(v = x_pos, col = "grey88", lwd = 0.8)
+abline(h = 4, col = "grey45", lty = 2, lwd = 1.2)
+
+segments(
+  x0 = x_pos,
+  y0 = movie_stats$ci_low,
+  x1 = x_pos,
+  y1 = movie_stats$ci_high,
+  lwd = 1.6
+)
+segments(
+  x0 = x_pos - 0.08,
+  y0 = movie_stats$ci_low,
+  x1 = x_pos + 0.08,
+  y1 = movie_stats$ci_low,
+  lwd = 1.6
+)
+segments(
+  x0 = x_pos - 0.08,
+  y0 = movie_stats$ci_high,
+  x1 = x_pos + 0.08,
+  y1 = movie_stats$ci_high,
+  lwd = 1.6
+)
+points(
+  x_pos,
+  movie_stats$mean_rating,
+  pch = 19,
+  cex = 1.5
+)
+
+axis(
+  side = 1,
+  at = x_pos,
+  labels = levels(movie_stats$movie_title),
+  las = 2,
+  cex.axis = 0.9
+)
+box(bty = "l")
+```

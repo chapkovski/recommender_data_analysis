@@ -1,0 +1,5 @@
+"treatment_label","treatment_match","treatment_domain","n_participants","mean_movies_rated","sd_movies_rated","mean_rate_share"
+"heterogeneous_neutral","heterogeneous","neutral",15,4.8,3.44756642948534,0.48
+"homogeneous_neutral","homogeneous","neutral",12,3.5,2.81231059968328,0.35
+"heterogeneous_political","heterogeneous","political",13,3.53846153846154,1.6132464481796,0.353846153846154
+"homogeneous_political","homogeneous","political",13,4.38461538461539,1.89466186686268,0.438461538461538

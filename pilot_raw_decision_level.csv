@@ -1,0 +1,531 @@
+"participant.code","round_number","decision","rated","movie_rating","movie_title","treatment_match","treatment_domain","treatment_label","movie_category","movie_content","movie_side","ideology_issue_right","ideology_group","decision_time_sec"
+"09wljl2r",1,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Borders and security)","political","right",1.33333333333333,"left",10
+"09wljl2r",2,"skip",FALSE,NA,"The Watchers","heterogeneous","neutral","heterogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",1.33333333333333,"left",12
+"09wljl2r",3,"skip",FALSE,NA,"In the Shadows","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",1.33333333333333,"left",3
+"09wljl2r",4,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",1.33333333333333,"left",4
+"09wljl2r",5,"skip",FALSE,NA,"Beta Launch","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.33333333333333,"left",3
+"09wljl2r",6,"skip",FALSE,NA,"System Failure","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",1.33333333333333,"left",3
+"09wljl2r",7,"skip",FALSE,NA,"Divided We Stand","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Tradition and authority)","political","right",1.33333333333333,"left",3
+"09wljl2r",8,"skip",FALSE,NA,"Broken Care","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",1.33333333333333,"left",3
+"09wljl2r",9,"skip",FALSE,NA,"Silicon Circus","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",1.33333333333333,"left",4
+"09wljl2r",10,"skip",FALSE,NA,"Scandals & Secrets","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.33333333333333,"left",4
+"0adtp370",1,"skip",FALSE,NA,"Silicon Circus","heterogeneous","political","heterogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",3,"left",77
+"0adtp370",2,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","political","heterogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",3,"left",47
+"0adtp370",3,"rate",TRUE,3,"Scandals & Secrets","heterogeneous","political","heterogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",3,"left",35
+"0adtp370",4,"skip",FALSE,NA,"Beta Launch","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",3,"left",31
+"0adtp370",5,"rate",TRUE,3,"Broken Care","heterogeneous","political","heterogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",3,"left",32
+"0adtp370",6,"rate",TRUE,4,"In the Shadows","heterogeneous","political","heterogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",3,"left",34
+"0adtp370",7,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","political","heterogeneous_political","Political -- Right (Borders and security)","political","right",3,"left",19
+"0adtp370",8,"skip",FALSE,NA,"Divided We Stand","heterogeneous","political","heterogeneous_political","Political -- Right (Tradition and authority)","political","right",3,"left",13
+"0adtp370",9,"rate",TRUE,3,"The Watchers","heterogeneous","political","heterogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",3,"left",33
+"0adtp370",10,"skip",FALSE,NA,"System Failure","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",3,"left",19
+"0pxi2iiu",1,"skip",FALSE,NA,"The Watchers","heterogeneous","political","heterogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",1.33333333333333,"left",18
+"0pxi2iiu",2,"rate",TRUE,4,"In the Shadows","heterogeneous","political","heterogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",1.33333333333333,"left",23
+"0pxi2iiu",3,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","political","heterogeneous_political","Political -- Right (Borders and security)","political","right",1.33333333333333,"left",32
+"0pxi2iiu",4,"skip",FALSE,NA,"Beta Launch","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.33333333333333,"left",14
+"0pxi2iiu",5,"rate",TRUE,4,"Incident in the Dark","heterogeneous","political","heterogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",1.33333333333333,"left",20
+"0pxi2iiu",6,"skip",FALSE,NA,"Silicon Circus","heterogeneous","political","heterogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",1.33333333333333,"left",29
+"0pxi2iiu",7,"skip",FALSE,NA,"Broken Care","heterogeneous","political","heterogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",1.33333333333333,"left",14
+"0pxi2iiu",8,"rate",TRUE,4,"System Failure","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",1.33333333333333,"left",21
+"0pxi2iiu",9,"skip",FALSE,NA,"Scandals & Secrets","heterogeneous","political","heterogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.33333333333333,"left",9
+"0pxi2iiu",10,"skip",FALSE,NA,"Divided We Stand","heterogeneous","political","heterogeneous_political","Political -- Right (Tradition and authority)","political","right",1.33333333333333,"left",14
+"0ua2wo0v",1,"rate",TRUE,4,"Broken Care","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",1,"left",27
+"0ua2wo0v",2,"rate",TRUE,4,"Glory Before Dawn","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Borders and security)","political","right",1,"left",16
+"0ua2wo0v",3,"rate",TRUE,4,"Incident in the Dark","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",1,"left",14
+"0ua2wo0v",4,"rate",TRUE,5,"Silicon Circus","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",1,"left",15
+"0ua2wo0v",5,"rate",TRUE,5,"The Watchers","heterogeneous","neutral","heterogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",1,"left",11
+"0ua2wo0v",6,"rate",TRUE,2,"Beta Launch","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1,"left",17
+"0ua2wo0v",7,"rate",TRUE,4,"Scandals & Secrets","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1,"left",14
+"0ua2wo0v",8,"rate",TRUE,4,"In the Shadows","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",1,"left",15
+"0ua2wo0v",9,"rate",TRUE,4,"System Failure","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",1,"left",14
+"0ua2wo0v",10,"rate",TRUE,2,"Divided We Stand","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Tradition and authority)","political","right",1,"left",11
+"21so1qgg",1,"skip",FALSE,NA,"Beta Launch","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",2.66666666666667,"left",30
+"21so1qgg",2,"skip",FALSE,NA,"Silicon Circus","homogeneous","neutral","homogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",2.66666666666667,"left",16
+"21so1qgg",3,"skip",FALSE,NA,"Glory Before Dawn","homogeneous","neutral","homogeneous_neutral","Political -- Right (Borders and security)","political","right",2.66666666666667,"left",10
+"21so1qgg",4,"skip",FALSE,NA,"System Failure","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",2.66666666666667,"left",10
+"21so1qgg",5,"rate",TRUE,2,"The Watchers","homogeneous","neutral","homogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",2.66666666666667,"left",14
+"21so1qgg",6,"rate",TRUE,2,"Incident in the Dark","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",2.66666666666667,"left",13
+"21so1qgg",7,"rate",TRUE,1,"Broken Care","homogeneous","neutral","homogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",2.66666666666667,"left",14
+"21so1qgg",8,"rate",TRUE,1,"Divided We Stand","homogeneous","neutral","homogeneous_neutral","Political -- Right (Tradition and authority)","political","right",2.66666666666667,"left",9
+"21so1qgg",9,"skip",FALSE,NA,"In the Shadows","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",2.66666666666667,"left",10
+"21so1qgg",10,"rate",TRUE,1,"Scandals & Secrets","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",2.66666666666667,"left",10
+"34fbeuz6",1,"skip",FALSE,NA,"The Watchers","homogeneous","political","homogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",3,"left",31
+"34fbeuz6",2,"skip",FALSE,NA,"Silicon Circus","homogeneous","political","homogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",3,"left",20
+"34fbeuz6",3,"skip",FALSE,NA,"System Failure","homogeneous","political","homogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",3,"left",17
+"34fbeuz6",4,"skip",FALSE,NA,"Scandals & Secrets","homogeneous","political","homogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",3,"left",40
+"34fbeuz6",5,"skip",FALSE,NA,"In the Shadows","homogeneous","political","homogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",3,"left",43
+"34fbeuz6",6,"skip",FALSE,NA,"Incident in the Dark","homogeneous","political","homogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",3,"left",22
+"34fbeuz6",7,"skip",FALSE,NA,"Beta Launch","homogeneous","political","homogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",3,"left",34
+"34fbeuz6",8,"rate",TRUE,4,"Divided We Stand","homogeneous","political","homogeneous_political","Political -- Right (Tradition and authority)","political","right",3,"left",33
+"34fbeuz6",9,"skip",FALSE,NA,"Glory Before Dawn","homogeneous","political","homogeneous_political","Political -- Right (Borders and security)","political","right",3,"left",14
+"34fbeuz6",10,"skip",FALSE,NA,"Broken Care","homogeneous","political","homogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",3,"left",29
+"39m6e1nn",1,"skip",FALSE,NA,"Broken Care","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",2,"left",24
+"39m6e1nn",2,"skip",FALSE,NA,"Silicon Circus","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",2,"left",6
+"39m6e1nn",3,"rate",TRUE,3,"Scandals & Secrets","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",2,"left",17
+"39m6e1nn",4,"skip",FALSE,NA,"Beta Launch","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",2,"left",42
+"39m6e1nn",5,"rate",TRUE,3,"System Failure","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",2,"left",14
+"39m6e1nn",6,"rate",TRUE,3,"Incident in the Dark","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",2,"left",11
+"39m6e1nn",7,"rate",TRUE,4,"In the Shadows","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",2,"left",9
+"39m6e1nn",8,"rate",TRUE,3,"The Watchers","heterogeneous","neutral","heterogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",2,"left",12
+"39m6e1nn",9,"rate",TRUE,3,"Glory Before Dawn","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Borders and security)","political","right",2,"left",9
+"39m6e1nn",10,"skip",FALSE,NA,"Divided We Stand","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Tradition and authority)","political","right",2,"left",6
+"3r9b3v92",1,"rate",TRUE,4,"The Watchers","heterogeneous","political","heterogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",1.66666666666667,"left",30
+"3r9b3v92",2,"skip",FALSE,NA,"Divided We Stand","heterogeneous","political","heterogeneous_political","Political -- Right (Tradition and authority)","political","right",1.66666666666667,"left",12
+"3r9b3v92",3,"skip",FALSE,NA,"System Failure","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",1.66666666666667,"left",12
+"3r9b3v92",4,"skip",FALSE,NA,"Scandals & Secrets","heterogeneous","political","heterogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.66666666666667,"left",9
+"3r9b3v92",5,"skip",FALSE,NA,"Beta Launch","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.66666666666667,"left",8
+"3r9b3v92",6,"skip",FALSE,NA,"In the Shadows","heterogeneous","political","heterogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",1.66666666666667,"left",8
+"3r9b3v92",7,"rate",TRUE,1,"Silicon Circus","heterogeneous","political","heterogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",1.66666666666667,"left",14
+"3r9b3v92",8,"rate",TRUE,4,"Glory Before Dawn","heterogeneous","political","heterogeneous_political","Political -- Right (Borders and security)","political","right",1.66666666666667,"left",18
+"3r9b3v92",9,"skip",FALSE,NA,"Broken Care","heterogeneous","political","heterogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",1.66666666666667,"left",7
+"3r9b3v92",10,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","political","heterogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",1.66666666666667,"left",6
+"4nqozqb8",1,"rate",TRUE,4,"In the Shadows","heterogeneous","political","heterogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",3,"left",121
+"4nqozqb8",2,"rate",TRUE,4,"Beta Launch","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",3,"left",70
+"4nqozqb8",3,"skip",FALSE,NA,"System Failure","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",3,"left",18
+"4nqozqb8",4,"rate",TRUE,4,"Divided We Stand","heterogeneous","political","heterogeneous_political","Political -- Right (Tradition and authority)","political","right",3,"left",30
+"4nqozqb8",5,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","political","heterogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",3,"left",21
+"4nqozqb8",6,"rate",TRUE,4,"Glory Before Dawn","heterogeneous","political","heterogeneous_political","Political -- Right (Borders and security)","political","right",3,"left",18
+"4nqozqb8",7,"skip",FALSE,NA,"Silicon Circus","heterogeneous","political","heterogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",3,"left",19
+"4nqozqb8",8,"rate",TRUE,4,"The Watchers","heterogeneous","political","heterogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",3,"left",18
+"4nqozqb8",9,"skip",FALSE,NA,"Scandals & Secrets","heterogeneous","political","heterogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",3,"left",16
+"4nqozqb8",10,"skip",FALSE,NA,"Broken Care","heterogeneous","political","heterogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",3,"left",3
+"5no9m3m7",1,"rate",TRUE,4,"The Watchers","heterogeneous","neutral","heterogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",1,"left",84
+"5no9m3m7",2,"rate",TRUE,4,"Silicon Circus","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",1,"left",27
+"5no9m3m7",3,"rate",TRUE,5,"In the Shadows","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",1,"left",30
+"5no9m3m7",4,"rate",TRUE,5,"Incident in the Dark","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",1,"left",27
+"5no9m3m7",5,"rate",TRUE,4,"Beta Launch","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1,"left",52
+"5no9m3m7",6,"rate",TRUE,4,"System Failure","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",1,"left",25
+"5no9m3m7",7,"rate",TRUE,4,"Divided We Stand","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Tradition and authority)","political","right",1,"left",21
+"5no9m3m7",8,"rate",TRUE,4,"Glory Before Dawn","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Borders and security)","political","right",1,"left",25
+"5no9m3m7",9,"rate",TRUE,4,"Broken Care","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",1,"left",23
+"5no9m3m7",10,"rate",TRUE,5,"Scandals & Secrets","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1,"left",42
+"5tvqm8qv",1,"rate",TRUE,4,"In the Shadows","homogeneous","political","homogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",2,"left",91
+"5tvqm8qv",2,"skip",FALSE,NA,"Incident in the Dark","homogeneous","political","homogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",2,"left",15
+"5tvqm8qv",3,"skip",FALSE,NA,"Divided We Stand","homogeneous","political","homogeneous_political","Political -- Right (Tradition and authority)","political","right",2,"left",40
+"5tvqm8qv",4,"rate",TRUE,4,"Broken Care","homogeneous","political","homogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",2,"left",18
+"5tvqm8qv",5,"rate",TRUE,2,"Glory Before Dawn","homogeneous","political","homogeneous_political","Political -- Right (Borders and security)","political","right",2,"left",19
+"5tvqm8qv",6,"rate",TRUE,1,"Scandals & Secrets","homogeneous","political","homogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",2,"left",22
+"5tvqm8qv",7,"skip",FALSE,NA,"Silicon Circus","homogeneous","political","homogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",2,"left",52
+"5tvqm8qv",8,"rate",TRUE,3,"System Failure","homogeneous","political","homogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",2,"left",26
+"5tvqm8qv",9,"skip",FALSE,NA,"Beta Launch","homogeneous","political","homogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",2,"left",21
+"5tvqm8qv",10,"rate",TRUE,4,"The Watchers","homogeneous","political","homogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",2,"left",13
+"5w340157",1,"skip",FALSE,NA,"Glory Before Dawn","homogeneous","neutral","homogeneous_neutral","Political -- Right (Borders and security)","political","right",1.66666666666667,"left",112
+"5w340157",2,"skip",FALSE,NA,"Beta Launch","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.66666666666667,"left",14
+"5w340157",3,"rate",TRUE,3,"System Failure","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",1.66666666666667,"left",23
+"5w340157",4,"skip",FALSE,NA,"Scandals & Secrets","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.66666666666667,"left",17
+"5w340157",5,"rate",TRUE,4,"Silicon Circus","homogeneous","neutral","homogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",1.66666666666667,"left",15
+"5w340157",6,"skip",FALSE,NA,"Divided We Stand","homogeneous","neutral","homogeneous_neutral","Political -- Right (Tradition and authority)","political","right",1.66666666666667,"left",7
+"5w340157",7,"rate",TRUE,4,"In the Shadows","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",1.66666666666667,"left",13
+"5w340157",8,"rate",TRUE,5,"The Watchers","homogeneous","neutral","homogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",1.66666666666667,"left",9
+"5w340157",9,"rate",TRUE,4,"Broken Care","homogeneous","neutral","homogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",1.66666666666667,"left",17
+"5w340157",10,"rate",TRUE,4,"Incident in the Dark","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",1.66666666666667,"left",11
+"5wbj9zow",1,"skip",FALSE,NA,"In the Shadows","homogeneous","political","homogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",4.66666666666667,"right",31
+"5wbj9zow",2,"skip",FALSE,NA,"Glory Before Dawn","homogeneous","political","homogeneous_political","Political -- Right (Borders and security)","political","right",4.66666666666667,"right",14
+"5wbj9zow",3,"skip",FALSE,NA,"Divided We Stand","homogeneous","political","homogeneous_political","Political -- Right (Tradition and authority)","political","right",4.66666666666667,"right",12
+"5wbj9zow",4,"skip",FALSE,NA,"Beta Launch","homogeneous","political","homogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",4.66666666666667,"right",7
+"5wbj9zow",5,"rate",TRUE,3,"Scandals & Secrets","homogeneous","political","homogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",4.66666666666667,"right",14
+"5wbj9zow",6,"rate",TRUE,4,"Incident in the Dark","homogeneous","political","homogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",4.66666666666667,"right",20
+"5wbj9zow",7,"skip",FALSE,NA,"The Watchers","homogeneous","political","homogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",4.66666666666667,"right",11
+"5wbj9zow",8,"skip",FALSE,NA,"Silicon Circus","homogeneous","political","homogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",4.66666666666667,"right",11
+"5wbj9zow",9,"skip",FALSE,NA,"System Failure","homogeneous","political","homogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",4.66666666666667,"right",11
+"5wbj9zow",10,"skip",FALSE,NA,"Broken Care","homogeneous","political","homogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",4.66666666666667,"right",9
+"6cczpid5",1,"skip",FALSE,NA,"In the Shadows","heterogeneous","political","heterogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",2.33333333333333,"left",14
+"6cczpid5",2,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","political","heterogeneous_political","Political -- Right (Borders and security)","political","right",2.33333333333333,"left",3
+"6cczpid5",3,"skip",FALSE,NA,"The Watchers","heterogeneous","political","heterogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",2.33333333333333,"left",8
+"6cczpid5",4,"skip",FALSE,NA,"System Failure","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",2.33333333333333,"left",2
+"6cczpid5",5,"skip",FALSE,NA,"Beta Launch","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",2.33333333333333,"left",2
+"6cczpid5",6,"skip",FALSE,NA,"Scandals & Secrets","heterogeneous","political","heterogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",2.33333333333333,"left",2
+"6cczpid5",7,"skip",FALSE,NA,"Broken Care","heterogeneous","political","heterogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",2.33333333333333,"left",3
+"6cczpid5",8,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","political","heterogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",2.33333333333333,"left",4
+"6cczpid5",9,"skip",FALSE,NA,"Divided We Stand","heterogeneous","political","heterogeneous_political","Political -- Right (Tradition and authority)","political","right",2.33333333333333,"left",2
+"6cczpid5",10,"skip",FALSE,NA,"Silicon Circus","heterogeneous","political","heterogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",2.33333333333333,"left",3
+"708gibec",1,"skip",FALSE,NA,"Beta Launch","homogeneous","political","homogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",4,"right",31
+"708gibec",2,"skip",FALSE,NA,"Incident in the Dark","homogeneous","political","homogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",4,"right",17
+"708gibec",3,"skip",FALSE,NA,"Silicon Circus","homogeneous","political","homogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",4,"right",15
+"708gibec",4,"rate",TRUE,4,"The Watchers","homogeneous","political","homogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",4,"right",38
+"708gibec",5,"skip",FALSE,NA,"In the Shadows","homogeneous","political","homogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",4,"right",27
+"708gibec",6,"skip",FALSE,NA,"Divided We Stand","homogeneous","political","homogeneous_political","Political -- Right (Tradition and authority)","political","right",4,"right",29
+"708gibec",7,"skip",FALSE,NA,"Glory Before Dawn","homogeneous","political","homogeneous_political","Political -- Right (Borders and security)","political","right",4,"right",39
+"708gibec",8,"rate",TRUE,4,"Scandals & Secrets","homogeneous","political","homogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",4,"right",16
+"708gibec",9,"rate",TRUE,4,"System Failure","homogeneous","political","homogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",4,"right",22
+"708gibec",10,"rate",TRUE,4,"Broken Care","homogeneous","political","homogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",4,"right",11
+"8w1n0bj0",1,"skip",FALSE,NA,"Divided We Stand","homogeneous","neutral","homogeneous_neutral","Political -- Right (Tradition and authority)","political","right",1,"left",21
+"8w1n0bj0",2,"rate",TRUE,2,"System Failure","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",1,"left",21
+"8w1n0bj0",3,"rate",TRUE,4,"Incident in the Dark","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",1,"left",23
+"8w1n0bj0",4,"rate",TRUE,4,"Silicon Circus","homogeneous","neutral","homogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",1,"left",20
+"8w1n0bj0",5,"rate",TRUE,1,"Glory Before Dawn","homogeneous","neutral","homogeneous_neutral","Political -- Right (Borders and security)","political","right",1,"left",12
+"8w1n0bj0",6,"skip",FALSE,NA,"The Watchers","homogeneous","neutral","homogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",1,"left",16
+"8w1n0bj0",7,"rate",TRUE,4,"In the Shadows","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",1,"left",12
+"8w1n0bj0",8,"rate",TRUE,4,"Beta Launch","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1,"left",12
+"8w1n0bj0",9,"rate",TRUE,4,"Broken Care","homogeneous","neutral","homogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",1,"left",13
+"8w1n0bj0",10,"rate",TRUE,2,"Scandals & Secrets","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1,"left",15
+"97tlwmb1",1,"skip",FALSE,NA,"Broken Care","homogeneous","political","homogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",1,"left",31
+"97tlwmb1",2,"rate",TRUE,1,"Divided We Stand","homogeneous","political","homogeneous_political","Political -- Right (Tradition and authority)","political","right",1,"left",9
+"97tlwmb1",3,"skip",FALSE,NA,"System Failure","homogeneous","political","homogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",1,"left",14
+"97tlwmb1",4,"skip",FALSE,NA,"In the Shadows","homogeneous","political","homogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",1,"left",14
+"97tlwmb1",5,"rate",TRUE,3,"Silicon Circus","homogeneous","political","homogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",1,"left",16
+"97tlwmb1",6,"skip",FALSE,NA,"Beta Launch","homogeneous","political","homogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1,"left",11
+"97tlwmb1",7,"rate",TRUE,1,"Glory Before Dawn","homogeneous","political","homogeneous_political","Political -- Right (Borders and security)","political","right",1,"left",18
+"97tlwmb1",8,"rate",TRUE,4,"Scandals & Secrets","homogeneous","political","homogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1,"left",12
+"97tlwmb1",9,"skip",FALSE,NA,"Incident in the Dark","homogeneous","political","homogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",1,"left",11
+"97tlwmb1",10,"skip",FALSE,NA,"The Watchers","homogeneous","political","homogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",1,"left",18
+"9z9ae853",1,"rate",TRUE,4,"Beta Launch","homogeneous","political","homogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1,"left",24
+"9z9ae853",2,"skip",FALSE,NA,"System Failure","homogeneous","political","homogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",1,"left",25
+"9z9ae853",3,"skip",FALSE,NA,"Scandals & Secrets","homogeneous","political","homogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1,"left",14
+"9z9ae853",4,"rate",TRUE,4,"In the Shadows","homogeneous","political","homogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",1,"left",16
+"9z9ae853",5,"skip",FALSE,NA,"Silicon Circus","homogeneous","political","homogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",1,"left",14
+"9z9ae853",6,"rate",TRUE,5,"Broken Care","homogeneous","political","homogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",1,"left",19
+"9z9ae853",7,"rate",TRUE,5,"Divided We Stand","homogeneous","political","homogeneous_political","Political -- Right (Tradition and authority)","political","right",1,"left",13
+"9z9ae853",8,"rate",TRUE,3,"Incident in the Dark","homogeneous","political","homogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",1,"left",21
+"9z9ae853",9,"skip",FALSE,NA,"The Watchers","homogeneous","political","homogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",1,"left",8
+"9z9ae853",10,"rate",TRUE,2,"Glory Before Dawn","homogeneous","political","homogeneous_political","Political -- Right (Borders and security)","political","right",1,"left",11
+"aar3r9tz",1,"skip",FALSE,NA,"Silicon Circus","homogeneous","neutral","homogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",2,"left",34
+"aar3r9tz",2,"rate",TRUE,4,"The Watchers","homogeneous","neutral","homogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",2,"left",16
+"aar3r9tz",3,"skip",FALSE,NA,"In the Shadows","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",2,"left",12
+"aar3r9tz",4,"skip",FALSE,NA,"Divided We Stand","homogeneous","neutral","homogeneous_neutral","Political -- Right (Tradition and authority)","political","right",2,"left",13
+"aar3r9tz",5,"skip",FALSE,NA,"Scandals & Secrets","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",2,"left",15
+"aar3r9tz",6,"skip",FALSE,NA,"Beta Launch","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",2,"left",13
+"aar3r9tz",7,"rate",TRUE,4,"System Failure","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",2,"left",16
+"aar3r9tz",8,"skip",FALSE,NA,"Broken Care","homogeneous","neutral","homogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",2,"left",13
+"aar3r9tz",9,"skip",FALSE,NA,"Glory Before Dawn","homogeneous","neutral","homogeneous_neutral","Political -- Right (Borders and security)","political","right",2,"left",8
+"aar3r9tz",10,"skip",FALSE,NA,"Incident in the Dark","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",2,"left",13
+"aky6bgu5",1,"skip",FALSE,NA,"In the Shadows","heterogeneous","political","heterogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",1.66666666666667,"left",44
+"aky6bgu5",2,"rate",TRUE,5,"The Watchers","heterogeneous","political","heterogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",1.66666666666667,"left",17
+"aky6bgu5",3,"rate",TRUE,5,"Broken Care","heterogeneous","political","heterogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",1.66666666666667,"left",17
+"aky6bgu5",4,"skip",FALSE,NA,"Silicon Circus","heterogeneous","political","heterogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",1.66666666666667,"left",13
+"aky6bgu5",5,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","political","heterogeneous_political","Political -- Right (Borders and security)","political","right",1.66666666666667,"left",13
+"aky6bgu5",6,"skip",FALSE,NA,"Beta Launch","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.66666666666667,"left",13
+"aky6bgu5",7,"rate",TRUE,4,"Scandals & Secrets","heterogeneous","political","heterogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.66666666666667,"left",14
+"aky6bgu5",8,"rate",TRUE,4,"Divided We Stand","heterogeneous","political","heterogeneous_political","Political -- Right (Tradition and authority)","political","right",1.66666666666667,"left",15
+"aky6bgu5",9,"rate",TRUE,5,"Incident in the Dark","heterogeneous","political","heterogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",1.66666666666667,"left",14
+"aky6bgu5",10,"rate",TRUE,4,"System Failure","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",1.66666666666667,"left",18
+"an1hfnw3",1,"rate",TRUE,2,"Incident in the Dark","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",1.66666666666667,"left",21
+"an1hfnw3",2,"rate",TRUE,1,"Divided We Stand","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Tradition and authority)","political","right",1.66666666666667,"left",9
+"an1hfnw3",3,"skip",FALSE,NA,"System Failure","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",1.66666666666667,"left",7
+"an1hfnw3",4,"rate",TRUE,3,"Silicon Circus","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",1.66666666666667,"left",11
+"an1hfnw3",5,"rate",TRUE,3,"In the Shadows","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",1.66666666666667,"left",13
+"an1hfnw3",6,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Borders and security)","political","right",1.66666666666667,"left",7
+"an1hfnw3",7,"rate",TRUE,4,"Scandals & Secrets","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.66666666666667,"left",13
+"an1hfnw3",8,"rate",TRUE,4,"Broken Care","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",1.66666666666667,"left",11
+"an1hfnw3",9,"rate",TRUE,4,"The Watchers","heterogeneous","neutral","heterogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",1.66666666666667,"left",16
+"an1hfnw3",10,"rate",TRUE,4,"Beta Launch","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.66666666666667,"left",15
+"bdb6ktf9",1,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","political","heterogeneous_political","Political -- Right (Borders and security)","political","right",1,"left",48
+"bdb6ktf9",2,"skip",FALSE,NA,"Scandals & Secrets","heterogeneous","political","heterogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1,"left",11
+"bdb6ktf9",3,"rate",TRUE,4,"Broken Care","heterogeneous","political","heterogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",1,"left",19
+"bdb6ktf9",4,"skip",FALSE,NA,"Silicon Circus","heterogeneous","political","heterogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",1,"left",13
+"bdb6ktf9",5,"rate",TRUE,4,"Incident in the Dark","heterogeneous","political","heterogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",1,"left",16
+"bdb6ktf9",6,"rate",TRUE,4,"In the Shadows","heterogeneous","political","heterogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",1,"left",15
+"bdb6ktf9",7,"skip",FALSE,NA,"The Watchers","heterogeneous","political","heterogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",1,"left",14
+"bdb6ktf9",8,"skip",FALSE,NA,"Beta Launch","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1,"left",10
+"bdb6ktf9",9,"rate",TRUE,4,"System Failure","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",1,"left",12
+"bdb6ktf9",10,"skip",FALSE,NA,"Divided We Stand","heterogeneous","political","heterogeneous_political","Political -- Right (Tradition and authority)","political","right",1,"left",15
+"btmwjh64",1,"skip",FALSE,NA,"In the Shadows","homogeneous","political","homogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",1.66666666666667,"left",25
+"btmwjh64",2,"skip",FALSE,NA,"Incident in the Dark","homogeneous","political","homogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",1.66666666666667,"left",6
+"btmwjh64",3,"rate",TRUE,4,"Broken Care","homogeneous","political","homogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",1.66666666666667,"left",12
+"btmwjh64",4,"skip",FALSE,NA,"The Watchers","homogeneous","political","homogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",1.66666666666667,"left",5
+"btmwjh64",5,"rate",TRUE,2,"Beta Launch","homogeneous","political","homogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.66666666666667,"left",8
+"btmwjh64",6,"rate",TRUE,2,"System Failure","homogeneous","political","homogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",1.66666666666667,"left",13
+"btmwjh64",7,"skip",FALSE,NA,"Glory Before Dawn","homogeneous","political","homogeneous_political","Political -- Right (Borders and security)","political","right",1.66666666666667,"left",7
+"btmwjh64",8,"skip",FALSE,NA,"Divided We Stand","homogeneous","political","homogeneous_political","Political -- Right (Tradition and authority)","political","right",1.66666666666667,"left",7
+"btmwjh64",9,"rate",TRUE,1,"Silicon Circus","homogeneous","political","homogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",1.66666666666667,"left",8
+"btmwjh64",10,"skip",FALSE,NA,"Scandals & Secrets","homogeneous","political","homogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.66666666666667,"left",13
+"eaeo10yu",1,"rate",TRUE,4,"Incident in the Dark","heterogeneous","political","heterogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",1.33333333333333,"left",15
+"eaeo10yu",2,"rate",TRUE,4,"In the Shadows","heterogeneous","political","heterogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",1.33333333333333,"left",9
+"eaeo10yu",3,"rate",TRUE,4,"The Watchers","heterogeneous","political","heterogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",1.33333333333333,"left",12
+"eaeo10yu",4,"rate",TRUE,4,"Broken Care","heterogeneous","political","heterogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",1.33333333333333,"left",11
+"eaeo10yu",5,"skip",FALSE,NA,"System Failure","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",1.33333333333333,"left",7
+"eaeo10yu",6,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","political","heterogeneous_political","Political -- Right (Borders and security)","political","right",1.33333333333333,"left",4
+"eaeo10yu",7,"skip",FALSE,NA,"Silicon Circus","heterogeneous","political","heterogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",1.33333333333333,"left",15
+"eaeo10yu",8,"skip",FALSE,NA,"Beta Launch","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.33333333333333,"left",5
+"eaeo10yu",9,"skip",FALSE,NA,"Divided We Stand","heterogeneous","political","heterogeneous_political","Political -- Right (Tradition and authority)","political","right",1.33333333333333,"left",8
+"eaeo10yu",10,"skip",FALSE,NA,"Scandals & Secrets","heterogeneous","political","heterogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.33333333333333,"left",7
+"ebeggcgx",1,"skip",FALSE,NA,"Silicon Circus","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",1.66666666666667,"left",11
+"ebeggcgx",2,"skip",FALSE,NA,"The Watchers","heterogeneous","neutral","heterogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",1.66666666666667,"left",4
+"ebeggcgx",3,"skip",FALSE,NA,"Divided We Stand","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Tradition and authority)","political","right",1.66666666666667,"left",5
+"ebeggcgx",4,"skip",FALSE,NA,"Scandals & Secrets","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.66666666666667,"left",5
+"ebeggcgx",5,"skip",FALSE,NA,"Broken Care","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",1.66666666666667,"left",5
+"ebeggcgx",6,"skip",FALSE,NA,"System Failure","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",1.66666666666667,"left",5
+"ebeggcgx",7,"rate",TRUE,5,"In the Shadows","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",1.66666666666667,"left",7
+"ebeggcgx",8,"rate",TRUE,4,"Glory Before Dawn","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Borders and security)","political","right",1.66666666666667,"left",5
+"ebeggcgx",9,"skip",FALSE,NA,"Beta Launch","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.66666666666667,"left",3
+"ebeggcgx",10,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",1.66666666666667,"left",4
+"fe239rbt",1,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","political","heterogeneous_political","Political -- Right (Borders and security)","political","right",3.33333333333333,"left",20
+"fe239rbt",2,"rate",TRUE,4,"System Failure","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",3.33333333333333,"left",19
+"fe239rbt",3,"skip",FALSE,NA,"Scandals & Secrets","heterogeneous","political","heterogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",3.33333333333333,"left",11
+"fe239rbt",4,"skip",FALSE,NA,"Silicon Circus","heterogeneous","political","heterogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",3.33333333333333,"left",7
+"fe239rbt",5,"rate",TRUE,3,"Beta Launch","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",3.33333333333333,"left",7
+"fe239rbt",6,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","political","heterogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",3.33333333333333,"left",5
+"fe239rbt",7,"rate",TRUE,4,"Divided We Stand","heterogeneous","political","heterogeneous_political","Political -- Right (Tradition and authority)","political","right",3.33333333333333,"left",8
+"fe239rbt",8,"skip",FALSE,NA,"Broken Care","heterogeneous","political","heterogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",3.33333333333333,"left",5
+"fe239rbt",9,"rate",TRUE,5,"In the Shadows","heterogeneous","political","heterogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",3.33333333333333,"left",7
+"fe239rbt",10,"skip",FALSE,NA,"The Watchers","heterogeneous","political","heterogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",3.33333333333333,"left",5
+"gwx3akey",1,"skip",FALSE,NA,"Beta Launch","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1,"left",19
+"gwx3akey",2,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",1,"left",7
+"gwx3akey",3,"rate",TRUE,5,"The Watchers","heterogeneous","neutral","heterogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",1,"left",9
+"gwx3akey",4,"skip",FALSE,NA,"Broken Care","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",1,"left",6
+"gwx3akey",5,"skip",FALSE,NA,"Divided We Stand","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Tradition and authority)","political","right",1,"left",7
+"gwx3akey",6,"skip",FALSE,NA,"System Failure","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",1,"left",8
+"gwx3akey",7,"rate",TRUE,4,"Scandals & Secrets","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1,"left",9
+"gwx3akey",8,"skip",FALSE,NA,"Silicon Circus","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",1,"left",5
+"gwx3akey",9,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Borders and security)","political","right",1,"left",3
+"gwx3akey",10,"skip",FALSE,NA,"In the Shadows","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",1,"left",7
+"gxbac2bi",1,"skip",FALSE,NA,"System Failure","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",3,"left",11
+"gxbac2bi",2,"skip",FALSE,NA,"Scandals & Secrets","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",3,"left",5
+"gxbac2bi",3,"skip",FALSE,NA,"Incident in the Dark","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",3,"left",4
+"gxbac2bi",4,"skip",FALSE,NA,"Silicon Circus","homogeneous","neutral","homogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",3,"left",8
+"gxbac2bi",5,"skip",FALSE,NA,"Broken Care","homogeneous","neutral","homogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",3,"left",4
+"gxbac2bi",6,"skip",FALSE,NA,"Beta Launch","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",3,"left",4
+"gxbac2bi",7,"skip",FALSE,NA,"Divided We Stand","homogeneous","neutral","homogeneous_neutral","Political -- Right (Tradition and authority)","political","right",3,"left",2
+"gxbac2bi",8,"skip",FALSE,NA,"In the Shadows","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",3,"left",4
+"gxbac2bi",9,"skip",FALSE,NA,"The Watchers","homogeneous","neutral","homogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",3,"left",3
+"gxbac2bi",10,"skip",FALSE,NA,"Glory Before Dawn","homogeneous","neutral","homogeneous_neutral","Political -- Right (Borders and security)","political","right",3,"left",4
+"halbqzny",1,"rate",TRUE,5,"Beta Launch","homogeneous","political","homogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",2.66666666666667,"left",21
+"halbqzny",2,"rate",TRUE,5,"Silicon Circus","homogeneous","political","homogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",2.66666666666667,"left",12
+"halbqzny",3,"rate",TRUE,5,"Scandals & Secrets","homogeneous","political","homogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",2.66666666666667,"left",9
+"halbqzny",4,"rate",TRUE,5,"Divided We Stand","homogeneous","political","homogeneous_political","Political -- Right (Tradition and authority)","political","right",2.66666666666667,"left",5
+"halbqzny",5,"skip",FALSE,NA,"Incident in the Dark","homogeneous","political","homogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",2.66666666666667,"left",9
+"halbqzny",6,"rate",TRUE,5,"Glory Before Dawn","homogeneous","political","homogeneous_political","Political -- Right (Borders and security)","political","right",2.66666666666667,"left",6
+"halbqzny",7,"rate",TRUE,5,"The Watchers","homogeneous","political","homogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",2.66666666666667,"left",5
+"halbqzny",8,"rate",TRUE,5,"System Failure","homogeneous","political","homogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",2.66666666666667,"left",5
+"halbqzny",9,"skip",FALSE,NA,"Broken Care","homogeneous","political","homogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",2.66666666666667,"left",5
+"halbqzny",10,"rate",TRUE,5,"In the Shadows","homogeneous","political","homogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",2.66666666666667,"left",5
+"hv0quve4",1,"skip",FALSE,NA,"Silicon Circus","heterogeneous","political","heterogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",4.33333333333333,"right",59
+"hv0quve4",2,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","political","heterogeneous_political","Political -- Right (Borders and security)","political","right",4.33333333333333,"right",10
+"hv0quve4",3,"skip",FALSE,NA,"Beta Launch","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",4.33333333333333,"right",28
+"hv0quve4",4,"rate",TRUE,4,"The Watchers","heterogeneous","political","heterogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",4.33333333333333,"right",89
+"hv0quve4",5,"skip",FALSE,NA,"Divided We Stand","heterogeneous","political","heterogeneous_political","Political -- Right (Tradition and authority)","political","right",4.33333333333333,"right",12
+"hv0quve4",6,"rate",TRUE,3,"Scandals & Secrets","heterogeneous","political","heterogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",4.33333333333333,"right",46
+"hv0quve4",7,"skip",FALSE,NA,"System Failure","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",4.33333333333333,"right",6
+"hv0quve4",8,"rate",TRUE,4,"In the Shadows","heterogeneous","political","heterogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",4.33333333333333,"right",7
+"hv0quve4",9,"skip",FALSE,NA,"Broken Care","heterogeneous","political","heterogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",4.33333333333333,"right",7
+"hv0quve4",10,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","political","heterogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",4.33333333333333,"right",4
+"iztdtt8p",1,"rate",TRUE,4,"Broken Care","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",1.33333333333333,"left",31
+"iztdtt8p",2,"rate",TRUE,4,"Incident in the Dark","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",1.33333333333333,"left",15
+"iztdtt8p",3,"skip",FALSE,NA,"Beta Launch","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.33333333333333,"left",9
+"iztdtt8p",4,"skip",FALSE,NA,"System Failure","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",1.33333333333333,"left",13
+"iztdtt8p",5,"skip",FALSE,NA,"Divided We Stand","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Tradition and authority)","political","right",1.33333333333333,"left",8
+"iztdtt8p",6,"rate",TRUE,2,"Silicon Circus","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",1.33333333333333,"left",23
+"iztdtt8p",7,"rate",TRUE,4,"In the Shadows","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",1.33333333333333,"left",10
+"iztdtt8p",8,"skip",FALSE,NA,"The Watchers","heterogeneous","neutral","heterogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",1.33333333333333,"left",10
+"iztdtt8p",9,"rate",TRUE,2,"Scandals & Secrets","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.33333333333333,"left",13
+"iztdtt8p",10,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Borders and security)","political","right",1.33333333333333,"left",13
+"j52ey30k",1,"skip",FALSE,NA,"In the Shadows","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",1.66666666666667,"left",11
+"j52ey30k",2,"skip",FALSE,NA,"Incident in the Dark","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",1.66666666666667,"left",6
+"j52ey30k",3,"skip",FALSE,NA,"Glory Before Dawn","homogeneous","neutral","homogeneous_neutral","Political -- Right (Borders and security)","political","right",1.66666666666667,"left",3
+"j52ey30k",4,"rate",TRUE,4,"Scandals & Secrets","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.66666666666667,"left",5
+"j52ey30k",5,"rate",TRUE,4,"Beta Launch","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.66666666666667,"left",7
+"j52ey30k",6,"rate",TRUE,2,"Divided We Stand","homogeneous","neutral","homogeneous_neutral","Political -- Right (Tradition and authority)","political","right",1.66666666666667,"left",7
+"j52ey30k",7,"rate",TRUE,1,"Silicon Circus","homogeneous","neutral","homogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",1.66666666666667,"left",6
+"j52ey30k",8,"rate",TRUE,2,"System Failure","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",1.66666666666667,"left",10
+"j52ey30k",9,"rate",TRUE,4,"The Watchers","homogeneous","neutral","homogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",1.66666666666667,"left",10
+"j52ey30k",10,"skip",FALSE,NA,"Broken Care","homogeneous","neutral","homogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",1.66666666666667,"left",4
+"jmfpwezv",1,"skip",FALSE,NA,"In the Shadows","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",2,"left",24
+"jmfpwezv",2,"rate",TRUE,2,"Scandals & Secrets","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",2,"left",11
+"jmfpwezv",3,"rate",TRUE,4,"The Watchers","heterogeneous","neutral","heterogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",2,"left",8
+"jmfpwezv",4,"skip",FALSE,NA,"System Failure","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",2,"left",10
+"jmfpwezv",5,"rate",TRUE,4,"Divided We Stand","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Tradition and authority)","political","right",2,"left",7
+"jmfpwezv",6,"rate",TRUE,4,"Glory Before Dawn","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Borders and security)","political","right",2,"left",11
+"jmfpwezv",7,"rate",TRUE,4,"Beta Launch","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",2,"left",10
+"jmfpwezv",8,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",2,"left",5
+"jmfpwezv",9,"rate",TRUE,4,"Broken Care","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",2,"left",11
+"jmfpwezv",10,"skip",FALSE,NA,"Silicon Circus","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",2,"left",4
+"jxo4qcal",1,"rate",TRUE,3,"In the Shadows","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",1.66666666666667,"left",44
+"jxo4qcal",2,"rate",TRUE,4,"The Watchers","heterogeneous","neutral","heterogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",1.66666666666667,"left",9
+"jxo4qcal",3,"rate",TRUE,3,"Beta Launch","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.66666666666667,"left",10
+"jxo4qcal",4,"rate",TRUE,4,"Scandals & Secrets","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.66666666666667,"left",6
+"jxo4qcal",5,"rate",TRUE,4,"Glory Before Dawn","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Borders and security)","political","right",1.66666666666667,"left",9
+"jxo4qcal",6,"rate",TRUE,4,"System Failure","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",1.66666666666667,"left",5
+"jxo4qcal",7,"rate",TRUE,4,"Silicon Circus","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",1.66666666666667,"left",6
+"jxo4qcal",8,"rate",TRUE,3,"Broken Care","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",1.66666666666667,"left",7
+"jxo4qcal",9,"rate",TRUE,4,"Incident in the Dark","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",1.66666666666667,"left",5
+"jxo4qcal",10,"rate",TRUE,4,"Divided We Stand","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Tradition and authority)","political","right",1.66666666666667,"left",9
+"krkkxad0",1,"skip",FALSE,NA,"Divided We Stand","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Tradition and authority)","political","right",1.66666666666667,"left",12
+"krkkxad0",2,"skip",FALSE,NA,"The Watchers","heterogeneous","neutral","heterogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",1.66666666666667,"left",10
+"krkkxad0",3,"skip",FALSE,NA,"Silicon Circus","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",1.66666666666667,"left",14
+"krkkxad0",4,"rate",TRUE,4,"Incident in the Dark","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",1.66666666666667,"left",11
+"krkkxad0",5,"skip",FALSE,NA,"System Failure","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",1.66666666666667,"left",6
+"krkkxad0",6,"skip",FALSE,NA,"Scandals & Secrets","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.66666666666667,"left",8
+"krkkxad0",7,"rate",TRUE,4,"In the Shadows","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",1.66666666666667,"left",10
+"krkkxad0",8,"skip",FALSE,NA,"Broken Care","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",1.66666666666667,"left",5
+"krkkxad0",9,"rate",TRUE,4,"Beta Launch","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.66666666666667,"left",11
+"krkkxad0",10,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Borders and security)","political","right",1.66666666666667,"left",4
+"ktzkjzjr",1,"skip",FALSE,NA,"Silicon Circus","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",1,"left",43
+"ktzkjzjr",2,"skip",FALSE,NA,"System Failure","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",1,"left",19
+"ktzkjzjr",3,"skip",FALSE,NA,"The Watchers","heterogeneous","neutral","heterogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",1,"left",9
+"ktzkjzjr",4,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",1,"left",11
+"ktzkjzjr",5,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Borders and security)","political","right",1,"left",6
+"ktzkjzjr",6,"skip",FALSE,NA,"In the Shadows","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",1,"left",4
+"ktzkjzjr",7,"skip",FALSE,NA,"Beta Launch","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1,"left",11
+"ktzkjzjr",8,"skip",FALSE,NA,"Broken Care","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",1,"left",6
+"ktzkjzjr",9,"skip",FALSE,NA,"Divided We Stand","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Tradition and authority)","political","right",1,"left",5
+"ktzkjzjr",10,"skip",FALSE,NA,"Scandals & Secrets","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1,"left",3
+"lcf9yyo1",1,"skip",FALSE,NA,"System Failure","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",2,"left",25
+"lcf9yyo1",2,"rate",TRUE,2,"Incident in the Dark","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",2,"left",11
+"lcf9yyo1",3,"rate",TRUE,2,"Glory Before Dawn","homogeneous","neutral","homogeneous_neutral","Political -- Right (Borders and security)","political","right",2,"left",9
+"lcf9yyo1",4,"skip",FALSE,NA,"Beta Launch","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",2,"left",5
+"lcf9yyo1",5,"skip",FALSE,NA,"In the Shadows","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",2,"left",4
+"lcf9yyo1",6,"rate",TRUE,4,"Silicon Circus","homogeneous","neutral","homogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",2,"left",10
+"lcf9yyo1",7,"rate",TRUE,4,"The Watchers","homogeneous","neutral","homogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",2,"left",9
+"lcf9yyo1",8,"skip",FALSE,NA,"Scandals & Secrets","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",2,"left",3
+"lcf9yyo1",9,"skip",FALSE,NA,"Broken Care","homogeneous","neutral","homogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",2,"left",3
+"lcf9yyo1",10,"rate",TRUE,4,"Divided We Stand","homogeneous","neutral","homogeneous_neutral","Political -- Right (Tradition and authority)","political","right",2,"left",6
+"ljgl76th",1,"rate",TRUE,4,"Glory Before Dawn","homogeneous","political","homogeneous_political","Political -- Right (Borders and security)","political","right",2.33333333333333,"left",40
+"ljgl76th",2,"rate",TRUE,5,"Scandals & Secrets","homogeneous","political","homogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",2.33333333333333,"left",16
+"ljgl76th",3,"rate",TRUE,4,"Incident in the Dark","homogeneous","political","homogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",2.33333333333333,"left",24
+"ljgl76th",4,"skip",FALSE,NA,"Broken Care","homogeneous","political","homogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",2.33333333333333,"left",8
+"ljgl76th",5,"rate",TRUE,4,"The Watchers","homogeneous","political","homogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",2.33333333333333,"left",10
+"ljgl76th",6,"rate",TRUE,5,"In the Shadows","homogeneous","political","homogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",2.33333333333333,"left",13
+"ljgl76th",7,"skip",FALSE,NA,"Beta Launch","homogeneous","political","homogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",2.33333333333333,"left",8
+"ljgl76th",8,"skip",FALSE,NA,"System Failure","homogeneous","political","homogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",2.33333333333333,"left",16
+"ljgl76th",9,"rate",TRUE,4,"Silicon Circus","homogeneous","political","homogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",2.33333333333333,"left",13
+"ljgl76th",10,"skip",FALSE,NA,"Divided We Stand","homogeneous","political","homogeneous_political","Political -- Right (Tradition and authority)","political","right",2.33333333333333,"left",13
+"m57l6i0n",1,"skip",FALSE,NA,"In the Shadows","heterogeneous","political","heterogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",4.66666666666667,"right",16
+"m57l6i0n",2,"skip",FALSE,NA,"System Failure","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",4.66666666666667,"right",15
+"m57l6i0n",3,"skip",FALSE,NA,"Silicon Circus","heterogeneous","political","heterogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",4.66666666666667,"right",10
+"m57l6i0n",4,"skip",FALSE,NA,"Divided We Stand","heterogeneous","political","heterogeneous_political","Political -- Right (Tradition and authority)","political","right",4.66666666666667,"right",20
+"m57l6i0n",5,"skip",FALSE,NA,"The Watchers","heterogeneous","political","heterogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",4.66666666666667,"right",3
+"m57l6i0n",6,"skip",FALSE,NA,"Broken Care","heterogeneous","political","heterogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",4.66666666666667,"right",4
+"m57l6i0n",7,"skip",FALSE,NA,"Beta Launch","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",4.66666666666667,"right",6
+"m57l6i0n",8,"rate",TRUE,5,"Glory Before Dawn","heterogeneous","political","heterogeneous_political","Political -- Right (Borders and security)","political","right",4.66666666666667,"right",12
+"m57l6i0n",9,"skip",FALSE,NA,"Scandals & Secrets","heterogeneous","political","heterogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",4.66666666666667,"right",7
+"m57l6i0n",10,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","political","heterogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",4.66666666666667,"right",7
+"n3h5r1fh",1,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",5.33333333333333,"right",12
+"n3h5r1fh",2,"skip",FALSE,NA,"Broken Care","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",5.33333333333333,"right",14
+"n3h5r1fh",3,"skip",FALSE,NA,"Scandals & Secrets","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",5.33333333333333,"right",9
+"n3h5r1fh",4,"rate",TRUE,2,"Divided We Stand","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Tradition and authority)","political","right",5.33333333333333,"right",16
+"n3h5r1fh",5,"rate",TRUE,1,"Beta Launch","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",5.33333333333333,"right",25
+"n3h5r1fh",6,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Borders and security)","political","right",5.33333333333333,"right",4
+"n3h5r1fh",7,"skip",FALSE,NA,"The Watchers","heterogeneous","neutral","heterogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",5.33333333333333,"right",12
+"n3h5r1fh",8,"rate",TRUE,4,"Silicon Circus","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",5.33333333333333,"right",9
+"n3h5r1fh",9,"skip",FALSE,NA,"System Failure","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",5.33333333333333,"right",4
+"n3h5r1fh",10,"skip",FALSE,NA,"In the Shadows","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",5.33333333333333,"right",5
+"p144ys5y",1,"skip",FALSE,NA,"Divided We Stand","homogeneous","neutral","homogeneous_neutral","Political -- Right (Tradition and authority)","political","right",4.33333333333333,"right",38
+"p144ys5y",2,"skip",FALSE,NA,"The Watchers","homogeneous","neutral","homogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",4.33333333333333,"right",15
+"p144ys5y",3,"skip",FALSE,NA,"System Failure","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",4.33333333333333,"right",6
+"p144ys5y",4,"skip",FALSE,NA,"Glory Before Dawn","homogeneous","neutral","homogeneous_neutral","Political -- Right (Borders and security)","political","right",4.33333333333333,"right",8
+"p144ys5y",5,"skip",FALSE,NA,"Broken Care","homogeneous","neutral","homogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",4.33333333333333,"right",6
+"p144ys5y",6,"skip",FALSE,NA,"Incident in the Dark","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",4.33333333333333,"right",6
+"p144ys5y",7,"skip",FALSE,NA,"Beta Launch","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",4.33333333333333,"right",6
+"p144ys5y",8,"skip",FALSE,NA,"Silicon Circus","homogeneous","neutral","homogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",4.33333333333333,"right",7
+"p144ys5y",9,"skip",FALSE,NA,"In the Shadows","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",4.33333333333333,"right",6
+"p144ys5y",10,"skip",FALSE,NA,"Scandals & Secrets","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",4.33333333333333,"right",6
+"pkb7r2hn",1,"skip",FALSE,NA,"Beta Launch","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",5,"right",58
+"pkb7r2hn",2,"rate",TRUE,2,"Incident in the Dark","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",5,"right",63
+"pkb7r2hn",3,"skip",FALSE,NA,"System Failure","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",5,"right",5
+"pkb7r2hn",4,"skip",FALSE,NA,"In the Shadows","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",5,"right",19
+"pkb7r2hn",5,"skip",FALSE,NA,"Broken Care","homogeneous","neutral","homogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",5,"right",7
+"pkb7r2hn",6,"skip",FALSE,NA,"Divided We Stand","homogeneous","neutral","homogeneous_neutral","Political -- Right (Tradition and authority)","political","right",5,"right",3
+"pkb7r2hn",7,"skip",FALSE,NA,"Scandals & Secrets","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",5,"right",3
+"pkb7r2hn",8,"skip",FALSE,NA,"Glory Before Dawn","homogeneous","neutral","homogeneous_neutral","Political -- Right (Borders and security)","political","right",5,"right",3
+"pkb7r2hn",9,"skip",FALSE,NA,"Silicon Circus","homogeneous","neutral","homogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",5,"right",3
+"pkb7r2hn",10,"rate",TRUE,4,"The Watchers","homogeneous","neutral","homogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",5,"right",14
+"pnwyllpm",1,"skip",FALSE,NA,"Incident in the Dark","homogeneous","political","homogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",1.66666666666667,"left",18
+"pnwyllpm",2,"skip",FALSE,NA,"Scandals & Secrets","homogeneous","political","homogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.66666666666667,"left",7
+"pnwyllpm",3,"skip",FALSE,NA,"Divided We Stand","homogeneous","political","homogeneous_political","Political -- Right (Tradition and authority)","political","right",1.66666666666667,"left",6
+"pnwyllpm",4,"skip",FALSE,NA,"The Watchers","homogeneous","political","homogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",1.66666666666667,"left",10
+"pnwyllpm",5,"rate",TRUE,4,"Broken Care","homogeneous","political","homogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",1.66666666666667,"left",6
+"pnwyllpm",6,"skip",FALSE,NA,"Silicon Circus","homogeneous","political","homogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",1.66666666666667,"left",7
+"pnwyllpm",7,"rate",TRUE,4,"Glory Before Dawn","homogeneous","political","homogeneous_political","Political -- Right (Borders and security)","political","right",1.66666666666667,"left",58
+"pnwyllpm",8,"skip",FALSE,NA,"In the Shadows","homogeneous","political","homogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",1.66666666666667,"left",9
+"pnwyllpm",9,"skip",FALSE,NA,"System Failure","homogeneous","political","homogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",1.66666666666667,"left",5
+"pnwyllpm",10,"rate",TRUE,3,"Beta Launch","homogeneous","political","homogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.66666666666667,"left",12
+"qjnhnvw2",1,"skip",FALSE,NA,"System Failure","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",2,"left",45
+"qjnhnvw2",2,"rate",TRUE,4,"Scandals & Secrets","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",2,"left",41
+"qjnhnvw2",3,"rate",TRUE,4,"In the Shadows","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",2,"left",33
+"qjnhnvw2",4,"skip",FALSE,NA,"Beta Launch","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",2,"left",16
+"qjnhnvw2",5,"skip",FALSE,NA,"Broken Care","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",2,"left",12
+"qjnhnvw2",6,"skip",FALSE,NA,"Divided We Stand","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Tradition and authority)","political","right",2,"left",9
+"qjnhnvw2",7,"skip",FALSE,NA,"The Watchers","heterogeneous","neutral","heterogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",2,"left",16
+"qjnhnvw2",8,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Borders and security)","political","right",2,"left",7
+"qjnhnvw2",9,"rate",TRUE,5,"Silicon Circus","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",2,"left",19
+"qjnhnvw2",10,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",2,"left",8
+"qx6wnqyz",1,"skip",FALSE,NA,"System Failure","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",1,"left",87
+"qx6wnqyz",2,"skip",FALSE,NA,"Divided We Stand","homogeneous","neutral","homogeneous_neutral","Political -- Right (Tradition and authority)","political","right",1,"left",20
+"qx6wnqyz",3,"skip",FALSE,NA,"Scandals & Secrets","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1,"left",15
+"qx6wnqyz",4,"skip",FALSE,NA,"Broken Care","homogeneous","neutral","homogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",1,"left",12
+"qx6wnqyz",5,"skip",FALSE,NA,"Glory Before Dawn","homogeneous","neutral","homogeneous_neutral","Political -- Right (Borders and security)","political","right",1,"left",20
+"qx6wnqyz",6,"skip",FALSE,NA,"The Watchers","homogeneous","neutral","homogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",1,"left",14
+"qx6wnqyz",7,"skip",FALSE,NA,"In the Shadows","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",1,"left",2
+"qx6wnqyz",8,"skip",FALSE,NA,"Silicon Circus","homogeneous","neutral","homogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",1,"left",1
+"qx6wnqyz",9,"skip",FALSE,NA,"Beta Launch","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1,"left",1
+"qx6wnqyz",10,"skip",FALSE,NA,"Incident in the Dark","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",1,"left",2
+"thezi6ku",1,"skip",FALSE,NA,"System Failure","homogeneous","political","homogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",1.66666666666667,"left",29
+"thezi6ku",2,"rate",TRUE,4,"Scandals & Secrets","homogeneous","political","homogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.66666666666667,"left",22
+"thezi6ku",3,"rate",TRUE,5,"Incident in the Dark","homogeneous","political","homogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",1.66666666666667,"left",17
+"thezi6ku",4,"skip",FALSE,NA,"Broken Care","homogeneous","political","homogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",1.66666666666667,"left",12
+"thezi6ku",5,"rate",TRUE,3,"Divided We Stand","homogeneous","political","homogeneous_political","Political -- Right (Tradition and authority)","political","right",1.66666666666667,"left",37
+"thezi6ku",6,"skip",FALSE,NA,"In the Shadows","homogeneous","political","homogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",1.66666666666667,"left",25
+"thezi6ku",7,"rate",TRUE,4,"Glory Before Dawn","homogeneous","political","homogeneous_political","Political -- Right (Borders and security)","political","right",1.66666666666667,"left",14
+"thezi6ku",8,"skip",FALSE,NA,"The Watchers","homogeneous","political","homogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",1.66666666666667,"left",16
+"thezi6ku",9,"rate",TRUE,2,"Silicon Circus","homogeneous","political","homogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",1.66666666666667,"left",57
+"thezi6ku",10,"skip",FALSE,NA,"Beta Launch","homogeneous","political","homogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.66666666666667,"left",8
+"tonelj20",1,"skip",FALSE,NA,"Beta Launch","homogeneous","political","homogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.66666666666667,"left",36
+"tonelj20",2,"skip",FALSE,NA,"System Failure","homogeneous","political","homogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",1.66666666666667,"left",18
+"tonelj20",3,"skip",FALSE,NA,"Scandals & Secrets","homogeneous","political","homogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.66666666666667,"left",7
+"tonelj20",4,"skip",FALSE,NA,"Silicon Circus","homogeneous","political","homogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",1.66666666666667,"left",4
+"tonelj20",5,"rate",TRUE,3,"Glory Before Dawn","homogeneous","political","homogeneous_political","Political -- Right (Borders and security)","political","right",1.66666666666667,"left",15
+"tonelj20",6,"skip",FALSE,NA,"Divided We Stand","homogeneous","political","homogeneous_political","Political -- Right (Tradition and authority)","political","right",1.66666666666667,"left",9
+"tonelj20",7,"rate",TRUE,4,"In the Shadows","homogeneous","political","homogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",1.66666666666667,"left",9
+"tonelj20",8,"rate",TRUE,3,"Incident in the Dark","homogeneous","political","homogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",1.66666666666667,"left",20
+"tonelj20",9,"skip",FALSE,NA,"Broken Care","homogeneous","political","homogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",1.66666666666667,"left",9
+"tonelj20",10,"skip",FALSE,NA,"The Watchers","homogeneous","political","homogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",1.66666666666667,"left",15
+"tqt5m9tl",1,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","political","heterogeneous_political","Political -- Right (Borders and security)","political","right",3.33333333333333,"left",61
+"tqt5m9tl",2,"skip",FALSE,NA,"Scandals & Secrets","heterogeneous","political","heterogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",3.33333333333333,"left",25
+"tqt5m9tl",3,"rate",TRUE,2,"In the Shadows","heterogeneous","political","heterogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",3.33333333333333,"left",37
+"tqt5m9tl",4,"rate",TRUE,1,"Divided We Stand","heterogeneous","political","heterogeneous_political","Political -- Right (Tradition and authority)","political","right",3.33333333333333,"left",29
+"tqt5m9tl",5,"skip",FALSE,NA,"Silicon Circus","heterogeneous","political","heterogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",3.33333333333333,"left",37
+"tqt5m9tl",6,"rate",TRUE,4,"The Watchers","heterogeneous","political","heterogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",3.33333333333333,"left",23
+"tqt5m9tl",7,"skip",FALSE,NA,"Beta Launch","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",3.33333333333333,"left",38
+"tqt5m9tl",8,"skip",FALSE,NA,"System Failure","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",3.33333333333333,"left",37
+"tqt5m9tl",9,"rate",TRUE,4,"Broken Care","heterogeneous","political","heterogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",3.33333333333333,"left",28
+"tqt5m9tl",10,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","political","heterogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",3.33333333333333,"left",23
+"w9ad1jmi",1,"skip",FALSE,NA,"Silicon Circus","homogeneous","neutral","homogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",2.66666666666667,"left",17
+"w9ad1jmi",2,"skip",FALSE,NA,"Broken Care","homogeneous","neutral","homogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",2.66666666666667,"left",5
+"w9ad1jmi",3,"skip",FALSE,NA,"Glory Before Dawn","homogeneous","neutral","homogeneous_neutral","Political -- Right (Borders and security)","political","right",2.66666666666667,"left",9
+"w9ad1jmi",4,"skip",FALSE,NA,"System Failure","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",2.66666666666667,"left",48
+"w9ad1jmi",5,"skip",FALSE,NA,"Beta Launch","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",2.66666666666667,"left",16
+"w9ad1jmi",6,"rate",TRUE,4,"The Watchers","homogeneous","neutral","homogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",2.66666666666667,"left",16
+"w9ad1jmi",7,"rate",TRUE,5,"Scandals & Secrets","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",2.66666666666667,"left",12
+"w9ad1jmi",8,"skip",FALSE,NA,"In the Shadows","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",2.66666666666667,"left",12
+"w9ad1jmi",9,"skip",FALSE,NA,"Divided We Stand","homogeneous","neutral","homogeneous_neutral","Political -- Right (Tradition and authority)","political","right",2.66666666666667,"left",29
+"w9ad1jmi",10,"skip",FALSE,NA,"Incident in the Dark","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",2.66666666666667,"left",52
+"wpbezbf9",1,"skip",FALSE,NA,"Broken Care","homogeneous","neutral","homogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",2.33333333333333,"left",28
+"wpbezbf9",2,"rate",TRUE,1,"Divided We Stand","homogeneous","neutral","homogeneous_neutral","Political -- Right (Tradition and authority)","political","right",2.33333333333333,"left",15
+"wpbezbf9",3,"rate",TRUE,4,"Scandals & Secrets","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",2.33333333333333,"left",15
+"wpbezbf9",4,"skip",FALSE,NA,"System Failure","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",2.33333333333333,"left",10
+"wpbezbf9",5,"rate",TRUE,4,"The Watchers","homogeneous","neutral","homogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",2.33333333333333,"left",10
+"wpbezbf9",6,"rate",TRUE,2,"Glory Before Dawn","homogeneous","neutral","homogeneous_neutral","Political -- Right (Borders and security)","political","right",2.33333333333333,"left",12
+"wpbezbf9",7,"rate",TRUE,2,"In the Shadows","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",2.33333333333333,"left",12
+"wpbezbf9",8,"rate",TRUE,2,"Incident in the Dark","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",2.33333333333333,"left",43
+"wpbezbf9",9,"skip",FALSE,NA,"Beta Launch","homogeneous","neutral","homogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",2.33333333333333,"left",28
+"wpbezbf9",10,"skip",FALSE,NA,"Silicon Circus","homogeneous","neutral","homogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",2.33333333333333,"left",11
+"ytpx9m8s",1,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Industrial accident)","non-political","non_political",1,"left",18
+"ytpx9m8s",2,"skip",FALSE,NA,"Broken Care","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Universal healthcare / medical debt)","political","left",1,"left",8
+"ytpx9m8s",3,"rate",TRUE,3,"Scandals & Secrets","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1,"left",11
+"ytpx9m8s",4,"rate",TRUE,3,"System Failure","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech malfunction)","non-political","non_political",1,"left",10
+"ytpx9m8s",5,"skip",FALSE,NA,"Divided We Stand","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Tradition and authority)","political","right",1,"left",13
+"ytpx9m8s",6,"skip",FALSE,NA,"Silicon Circus","heterogeneous","neutral","heterogeneous_neutral","Political -- Left (Immigration / undocumented workers)","political","left",1,"left",12
+"ytpx9m8s",7,"rate",TRUE,3,"In the Shadows","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Criminal hunt)","non-political","non_political",1,"left",12
+"ytpx9m8s",8,"rate",TRUE,4,"The Watchers","heterogeneous","neutral","heterogeneous_neutral","Political -- Neutral (Surveillance and privacy)","political","neutral",1,"left",14
+"ytpx9m8s",9,"skip",FALSE,NA,"Beta Launch","heterogeneous","neutral","heterogeneous_neutral","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1,"left",8
+"ytpx9m8s",10,"skip",FALSE,NA,"Glory Before Dawn","heterogeneous","neutral","heterogeneous_neutral","Political -- Right (Borders and security)","political","right",1,"left",5
+"ywd5rfj7",1,"rate",TRUE,3,"Beta Launch","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1.66666666666667,"left",83
+"ywd5rfj7",2,"rate",TRUE,1,"In the Shadows","heterogeneous","political","heterogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",1.66666666666667,"left",21
+"ywd5rfj7",3,"rate",TRUE,1,"Glory Before Dawn","heterogeneous","political","heterogeneous_political","Political -- Right (Borders and security)","political","right",1.66666666666667,"left",16
+"ywd5rfj7",4,"rate",TRUE,4,"Divided We Stand","heterogeneous","political","heterogeneous_political","Political -- Right (Tradition and authority)","political","right",1.66666666666667,"left",22
+"ywd5rfj7",5,"skip",FALSE,NA,"System Failure","heterogeneous","political","heterogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",1.66666666666667,"left",25
+"ywd5rfj7",6,"skip",FALSE,NA,"Silicon Circus","heterogeneous","political","heterogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",1.66666666666667,"left",21
+"ywd5rfj7",7,"skip",FALSE,NA,"Broken Care","heterogeneous","political","heterogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",1.66666666666667,"left",15
+"ywd5rfj7",8,"skip",FALSE,NA,"Incident in the Dark","heterogeneous","political","heterogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",1.66666666666667,"left",9
+"ywd5rfj7",9,"skip",FALSE,NA,"Scandals & Secrets","heterogeneous","political","heterogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1.66666666666667,"left",18
+"ywd5rfj7",10,"rate",TRUE,4,"The Watchers","heterogeneous","political","heterogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",1.66666666666667,"left",15
+"zw9trjpp",1,"skip",FALSE,NA,"Scandals & Secrets","homogeneous","political","homogeneous_political","Control -- Non-political (Celebrity scandal / media pressure)","non-political","non_political",1,"left",16
+"zw9trjpp",2,"skip",FALSE,NA,"Broken Care","homogeneous","political","homogeneous_political","Political -- Left (Universal healthcare / medical debt)","political","left",1,"left",14
+"zw9trjpp",3,"rate",TRUE,4,"The Watchers","homogeneous","political","homogeneous_political","Political -- Neutral (Surveillance and privacy)","political","neutral",1,"left",11
+"zw9trjpp",4,"rate",TRUE,3,"Glory Before Dawn","homogeneous","political","homogeneous_political","Political -- Right (Borders and security)","political","right",1,"left",28
+"zw9trjpp",5,"rate",TRUE,5,"System Failure","homogeneous","political","homogeneous_political","Control -- Non-political (Tech malfunction)","non-political","non_political",1,"left",74
+"zw9trjpp",6,"rate",TRUE,5,"Incident in the Dark","homogeneous","political","homogeneous_political","Control -- Non-political (Industrial accident)","non-political","non_political",1,"left",16
+"zw9trjpp",7,"skip",FALSE,NA,"In the Shadows","homogeneous","political","homogeneous_political","Control -- Non-political (Criminal hunt)","non-political","non_political",1,"left",3
+"zw9trjpp",8,"skip",FALSE,NA,"Silicon Circus","homogeneous","political","homogeneous_political","Political -- Left (Immigration / undocumented workers)","political","left",1,"left",4
+"zw9trjpp",9,"rate",TRUE,4,"Beta Launch","homogeneous","political","homogeneous_political","Control -- Non-political (Tech satire / corporate culture)","non-political","non_political",1,"left",12
+"zw9trjpp",10,"skip",FALSE,NA,"Divided We Stand","homogeneous","political","homogeneous_political","Political -- Right (Tradition and authority)","political","right",1,"left",4

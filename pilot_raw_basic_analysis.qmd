@@ -1,0 +1,548 @@
+---
+title: "Pilot Raw Data: Basic Analysis"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-fold: false
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(jsonlite)
+library(knitr)
+
+raw_dir <- "raw_data"
+main_file <- sort(list.files(raw_dir, pattern = "^main_.*\\.csv$", full.names = TRUE), decreasing = TRUE)[1]
+pre_file <- sort(list.files(raw_dir, pattern = "^pre_experimental_.*\\.csv$", full.names = TRUE), decreasing = TRUE)[1]
+page_file <- sort(list.files(raw_dir, pattern = "^PageTimes-.*\\.csv$", full.names = TRUE), decreasing = TRUE)[1]
+
+if (any(is.na(c(main_file, pre_file, page_file)))) {
+  stop("Missing one or more required raw-data files in /raw_data.")
+}
+
+main_raw <- read.csv(main_file, check.names = FALSE, stringsAsFactors = FALSE)
+pre_raw <- read.csv(pre_file, check.names = FALSE, stringsAsFactors = FALSE)
+page_raw <- read.csv(page_file, check.names = FALSE, stringsAsFactors = FALSE)
+
+movie_meta <- tibble::tribble(
+  ~movie_title, ~movie_category, ~movie_content, ~movie_side,
+  "Silicon Circus", "Political -- Left (Immigration / undocumented workers)", "political", "left",
+  "Broken Care", "Political -- Left (Universal healthcare / medical debt)", "political", "left",
+  "The Watchers", "Political -- Neutral (Surveillance and privacy)", "political", "neutral",
+  "Glory Before Dawn", "Political -- Right (Borders and security)", "political", "right",
+  "Divided We Stand", "Political -- Right (Tradition and authority)", "political", "right",
+  "Incident in the Dark", "Control -- Non-political (Industrial accident)", "non-political", "non_political",
+  "In the Shadows", "Control -- Non-political (Criminal hunt)", "non-political", "non_political",
+  "Scandals & Secrets", "Control -- Non-political (Celebrity scandal / media pressure)", "non-political", "non_political",
+  "System Failure", "Control -- Non-political (Tech malfunction)", "non-political", "non_political",
+  "Beta Launch", "Control -- Non-political (Tech satire / corporate culture)", "non-political", "non_political"
+)
+
+parse_pol_answers <- function(x) {
+  if (is.na(x) || !nzchar(x)) {
+    return(list())
+  }
+  fromJSON(x, simplifyVector = TRUE)
+}
+
+mean_or_na <- function(x) {
+  x <- x[!is.na(x)]
+  if (length(x) == 0) {
+    return(NA_real_)
+  }
+  mean(x)
+}
+
+complete_codes <- main_raw %>%
+  mutate(has_decision = nzchar(player.decision)) %>%
+  group_by(participant.code) %>%
+  summarise(n_decisions = sum(has_decision), .groups = "drop") %>%
+  filter(n_decisions == 10) %>%
+  pull(participant.code)
+
+pre_analysis <- pre_raw %>%
+  filter(participant.code %in% complete_codes) %>%
+  rowwise() %>%
+  mutate(
+    pol_answers = list(parse_pol_answers(player.pol_answers_json)),
+    abortion = suppressWarnings(as.numeric(pol_answers[["women"]])),
+    immigration = suppressWarnings(as.numeric(pol_answers[["immigration"]])),
+    climate = suppressWarnings(as.numeric(pol_answers[["climate_change"]])),
+    # Higher values indicate a more right-leaning profile on the issue items.
+    ideology_issue_right = mean(c(7 - abortion, immigration, 7 - climate), na.rm = TRUE),
+    ideology_group = case_when(
+      ideology_issue_right < 3.5 ~ "left",
+      ideology_issue_right > 3.5 ~ "right",
+      TRUE ~ "center"
+    ),
+    treatment_match = if_else(player.treatment_heterogeneous == "yes", "heterogeneous", "homogeneous"),
+    treatment_domain = if_else(player.treatment_political == "yes", "political", "neutral"),
+    treatment_label = paste(treatment_match, treatment_domain, sep = "_")
+  ) %>%
+  ungroup() %>%
+  select(
+    participant.code,
+    treatment_match,
+    treatment_domain,
+    treatment_label,
+    ideology_issue_right,
+    ideology_group
+  )
+
+main_analysis <- main_raw %>%
+  filter(participant.code %in% complete_codes, nzchar(player.decision)) %>%
+  transmute(
+    participant.code,
+    round_number = as.integer(subsession.round_number),
+    decision = player.decision,
+    rated = player.decision == "rate",
+    movie_rating = suppressWarnings(as.numeric(player.movie_rating)),
+    movie_title = player.movie_title,
+    treatment_match = if_else(player.treatment_heterogeneous == "yes", "heterogeneous", "homogeneous"),
+    treatment_domain = if_else(player.treatment_political == "yes", "political", "neutral"),
+    treatment_label = paste(treatment_match, treatment_domain, sep = "_")
+  ) %>%
+  left_join(movie_meta, by = "movie_title") %>%
+  left_join(
+    pre_analysis,
+    by = c("participant.code", "treatment_match", "treatment_domain", "treatment_label")
+  )
+
+page_analysis <- page_raw %>%
+  filter(participant_code %in% complete_codes) %>%
+  arrange(participant_code, as.integer(page_index), as.numeric(epoch_time_completed)) %>%
+  group_by(participant_code) %>%
+  mutate(
+    prev_epoch = lag(as.numeric(epoch_time_completed)),
+    decision_time_sec = as.numeric(epoch_time_completed) - prev_epoch
+  ) %>%
+  ungroup() %>%
+  filter(app_name == "main", page_name == "RatingDecision") %>%
+  transmute(
+    participant.code = participant_code,
+    round_number = as.integer(round_number),
+    decision_time_sec
+  )
+
+decision_level <- main_analysis %>%
+  left_join(page_analysis, by = c("participant.code", "round_number")) %>%
+  arrange(participant.code, round_number)
+
+participant_level <- decision_level %>%
+  group_by(
+    participant.code,
+    treatment_match,
+    treatment_domain,
+    treatment_label,
+    ideology_issue_right,
+    ideology_group
+  ) %>%
+  summarise(
+    movies_rated = sum(rated),
+    rate_share = mean(rated),
+    mean_rating_given = mean_or_na(movie_rating[rated]),
+    mean_decision_time_sec = mean_or_na(decision_time_sec),
+    .groups = "drop"
+  )
+
+overall_summary <- tibble::tibble(
+  metric = c(
+    "Participants in pre-experimental file",
+    "Participants who completed all 10 main rounds",
+    "Share of recruited participants who completed all 10 main rounds",
+    "Mean movies rated per completer",
+    "Median movies rated per completer",
+    "Mean rating probability across all decisions",
+    "Mean decision time (seconds)",
+    "Median decision time (seconds)"
+  ),
+  value = c(
+    n_distinct(pre_raw$participant.code),
+    n_distinct(participant_level$participant.code),
+    sprintf("%.1f%%", 100 * n_distinct(participant_level$participant.code) / n_distinct(pre_raw$participant.code)),
+    sprintf("%.2f", mean(participant_level$movies_rated)),
+    sprintf("%.2f", median(participant_level$movies_rated)),
+    sprintf("%.2f", mean(decision_level$rated)),
+    sprintf("%.2f", mean(decision_level$decision_time_sec, na.rm = TRUE)),
+    sprintf("%.2f", median(decision_level$decision_time_sec, na.rm = TRUE))
+  )
+)
+
+treatment_summary <- participant_level %>%
+  group_by(treatment_label, treatment_match, treatment_domain) %>%
+  summarise(
+    n_participants = n(),
+    mean_movies_rated = mean(movies_rated),
+    sd_movies_rated = sd(movies_rated),
+    mean_rate_share = mean(rate_share),
+    .groups = "drop"
+  ) %>%
+  arrange(treatment_domain, treatment_match)
+
+factor_summary <- bind_rows(
+  participant_level %>%
+    group_by(factor = "match_type", level = treatment_match) %>%
+    summarise(
+      n_participants = n(),
+      mean_movies_rated = mean(movies_rated),
+      sd_movies_rated = sd(movies_rated),
+      mean_rate_share = mean(rate_share),
+      .groups = "drop"
+    ),
+  participant_level %>%
+    group_by(factor = "domain", level = treatment_domain) %>%
+    summarise(
+      n_participants = n(),
+      mean_movies_rated = mean(movies_rated),
+      sd_movies_rated = sd(movies_rated),
+      mean_rate_share = mean(rate_share),
+      .groups = "drop"
+    )
+)
+
+content_summary <- decision_level %>%
+  group_by(movie_content, movie_side) %>%
+  summarise(
+    n_decisions = n(),
+    rate_probability = mean(rated),
+    mean_rating_if_rated = mean_or_na(movie_rating[rated]),
+    mean_decision_time_sec = mean_or_na(decision_time_sec),
+    .groups = "drop"
+  ) %>%
+  arrange(movie_content, movie_side)
+
+ideology_content_summary <- decision_level %>%
+  filter(ideology_group %in% c("left", "right"), movie_side %in% c("left", "right")) %>%
+  group_by(ideology_group, movie_side) %>%
+  summarise(
+    n_decisions = n(),
+    rate_probability = mean(rated),
+    mean_rating_if_rated = mean_or_na(movie_rating[rated]),
+    mean_decision_time_sec = mean_or_na(decision_time_sec),
+    .groups = "drop"
+  ) %>%
+  arrange(ideology_group, movie_side)
+
+round_summary <- decision_level %>%
+  group_by(round_number) %>%
+  summarise(
+    n_decisions = n(),
+    rate_probability = mean(rated),
+    mean_decision_time_sec = mean_or_na(decision_time_sec),
+    median_decision_time_sec = median(decision_time_sec, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+round_treatment_summary <- decision_level %>%
+  group_by(round_number, treatment_label) %>%
+  summarise(
+    n_decisions = n(),
+    rate_probability = mean(rated),
+    .groups = "drop"
+  )
+
+time_side_summary <- decision_level %>%
+  filter(ideology_group %in% c("left", "right"), movie_side %in% c("left", "right")) %>%
+  group_by(ideology_group, movie_side) %>%
+  summarise(
+    n_decisions = n(),
+    mean_decision_time_sec = mean_or_na(decision_time_sec),
+    median_decision_time_sec = median(decision_time_sec, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+write.csv(participant_level, "pilot_raw_participant_level.csv", row.names = FALSE)
+write.csv(decision_level, "pilot_raw_decision_level.csv", row.names = FALSE)
+write.csv(treatment_summary, "pilot_raw_treatment_summary.csv", row.names = FALSE)
+write.csv(round_summary, "pilot_raw_round_summary.csv", row.names = FALSE)
+```
+
+This report uses `r basename(main_file)`, `r basename(pre_file)`, and `r basename(page_file)` from `/raw_data`.
+
+The analysis follows the hypotheses summarized in `/text/presentation_BEEN.tex`:
+
+- `H1`: participants should contribute less in homogeneous than heterogeneous matches.
+- `H2`: that heterogeneous-homogeneous gap should be larger in the political domain.
+- `H3`: contribution should differ for political versus non-political movie content.
+
+All main analyses below use the `r n_distinct(participant_level$participant.code)` participants who completed all 10 main rounds. The pre-experimental file contains `r n_distinct(pre_raw$participant.code)` recruited participants in total, so the completion share is `r sprintf('%.1f%%', 100 * n_distinct(participant_level$participant.code) / n_distinct(pre_raw$participant.code))`.
+
+The raw export does not contain a usable direct left-right self-placement item in this pilot. The ideology sections therefore use a derived issue-based right-leaning score built from three political statements in the pre-treatment survey:
+
+- abortion rights, reverse-coded
+- immigration restriction
+- climate-priority, reverse-coded
+
+Higher values indicate a more right-leaning issue profile.
+
+## Sample Overview
+
+```{r}
+kable(overall_summary, col.names = c("Metric", "Value"), align = c("l", "r"))
+```
+
+## How Many Movies Do People Rate?
+
+### Overall Distribution
+
+```{r fig.width=8, fig.height=4.5}
+ggplot(participant_level, aes(x = movies_rated)) +
+  geom_histogram(binwidth = 1, boundary = -0.5, fill = "#3b6f8c", color = "white") +
+  scale_x_continuous(breaks = 0:10) +
+  labs(
+    x = "Movies rated out of 10",
+    y = "Participants",
+    title = "How many movies participants chose to rate"
+  ) +
+  theme_minimal(base_size = 13)
+```
+
+```{r}
+movies_rated_distribution <- participant_level %>%
+  count(movies_rated, name = "participants") %>%
+  mutate(share = sprintf("%.1f%%", 100 * participants / sum(participants)))
+
+kable(movies_rated_distribution, col.names = c("Movies rated", "Participants", "Share"), align = c("r", "r", "r"))
+```
+
+### Variation Across the Four Treatment Cells
+
+```{r}
+kable(
+  treatment_summary %>%
+    mutate(
+      mean_movies_rated = round(mean_movies_rated, 2),
+      sd_movies_rated = round(sd_movies_rated, 2),
+      mean_rate_share = round(mean_rate_share, 3)
+    ),
+  col.names = c("Treatment", "Match type", "Domain", "N", "Mean movies rated", "SD", "Mean rate share"),
+  align = c("l", "l", "l", "r", "r", "r", "r")
+)
+```
+
+```{r fig.width=8, fig.height=4.8}
+ggplot(treatment_summary, aes(x = reorder(treatment_label, mean_movies_rated), y = mean_movies_rated, fill = treatment_domain)) +
+  geom_col(width = 0.7) +
+  coord_flip() +
+  labs(
+    x = "",
+    y = "Mean movies rated",
+    title = "Movies rated by treatment cell"
+  ) +
+  theme_minimal(base_size = 13) +
+  scale_fill_manual(values = c("neutral" = "#8fb339", "political" = "#cf5c36"), name = "Domain")
+```
+
+### Variation Across the Two Treatment Factors
+
+```{r}
+kable(
+  factor_summary %>%
+    mutate(
+      mean_movies_rated = round(mean_movies_rated, 2),
+      sd_movies_rated = round(sd_movies_rated, 2),
+      mean_rate_share = round(mean_rate_share, 3)
+    ),
+  col.names = c("Factor", "Level", "N", "Mean movies rated", "SD", "Mean rate share"),
+  align = c("l", "l", "r", "r", "r", "r")
+)
+```
+
+## Political Versus Non-Political Movie Content
+
+This section speaks most directly to `H3`.
+
+```{r}
+kable(
+  content_summary %>%
+    mutate(
+      rate_probability = round(rate_probability, 3),
+      mean_rating_if_rated = round(mean_rating_if_rated, 2),
+      mean_decision_time_sec = round(mean_decision_time_sec, 2)
+    ),
+  col.names = c("Movie content", "Movie side", "Decisions", "Rate probability", "Mean rating if rated", "Mean decision time (sec)"),
+  align = c("l", "l", "r", "r", "r", "r")
+)
+```
+
+```{r fig.width=8, fig.height=4.8}
+ggplot(content_summary, aes(x = movie_side, y = rate_probability, fill = movie_content)) +
+  geom_col(position = "dodge", width = 0.7) +
+  labs(
+    x = "Movie type",
+    y = "Probability of choosing rate",
+    title = "Rate probability by movie content"
+  ) +
+  theme_minimal(base_size = 13) +
+  scale_fill_manual(values = c("non-political" = "#8fb339", "political" = "#cf5c36"), name = "Content")
+```
+
+## Do Left-Wing Participants Rate Left-Wing Movies More Often or More Positively?
+
+This is descriptive only. The ideology grouping is derived from issue positions, not from a direct self-placement item, because that field is blank in this pilot export. The right-leaning group is small, so these comparisons should be read cautiously.
+
+```{r}
+ideology_group_counts <- participant_level %>%
+  count(ideology_group, name = "participants") %>%
+  arrange(ideology_group)
+
+kable(ideology_group_counts, col.names = c("Ideology group", "Participants"), align = c("l", "r"))
+```
+
+```{r}
+kable(
+  ideology_content_summary %>%
+    mutate(
+      rate_probability = round(rate_probability, 3),
+      mean_rating_if_rated = round(mean_rating_if_rated, 2),
+      mean_decision_time_sec = round(mean_decision_time_sec, 2)
+    ),
+  col.names = c("Participant ideology", "Movie side", "Decisions", "Rate probability", "Mean rating if rated", "Mean decision time (sec)"),
+  align = c("l", "l", "r", "r", "r", "r")
+)
+```
+
+```{r fig.width=9, fig.height=4.8}
+ggplot(ideology_content_summary, aes(x = movie_side, y = rate_probability, fill = ideology_group)) +
+  geom_col(position = "dodge", width = 0.7) +
+  labs(
+    x = "Movie side",
+    y = "Probability of choosing rate",
+    title = "Rate probability for left- and right-coded movies"
+  ) +
+  theme_minimal(base_size = 13) +
+  scale_fill_manual(values = c("left" = "#3b6f8c", "right" = "#cf5c36"), name = "Participant ideology")
+```
+
+```{r fig.width=9, fig.height=4.8}
+ggplot(ideology_content_summary, aes(x = movie_side, y = mean_rating_if_rated, fill = ideology_group)) +
+  geom_col(position = "dodge", width = 0.7) +
+  labs(
+    x = "Movie side",
+    y = "Mean rating among rated movies",
+    title = "Conditional star ratings for left- and right-coded movies"
+  ) +
+  theme_minimal(base_size = 13) +
+  scale_fill_manual(values = c("left" = "#3b6f8c", "right" = "#cf5c36"), name = "Participant ideology")
+```
+
+## How Does Rating Probability Change from Movie 1 to Movie 10?
+
+```{r}
+kable(
+  round_summary %>%
+    mutate(
+      rate_probability = round(rate_probability, 3),
+      mean_decision_time_sec = round(mean_decision_time_sec, 2),
+      median_decision_time_sec = round(median_decision_time_sec, 2)
+    ),
+  col.names = c("Round", "Decisions", "Rate probability", "Mean decision time (sec)", "Median decision time (sec)"),
+  align = c("r", "r", "r", "r", "r")
+)
+```
+
+```{r fig.width=8, fig.height=4.8}
+ggplot(round_summary, aes(x = round_number, y = rate_probability)) +
+  geom_line(color = "#3b6f8c", linewidth = 1) +
+  geom_point(color = "#3b6f8c", size = 2.4) +
+  scale_x_continuous(breaks = 1:10) +
+  labs(
+    x = "Shown movie number",
+    y = "Probability of choosing rate",
+    title = "How rating probability evolves across the 10 rounds"
+  ) +
+  theme_minimal(base_size = 13)
+```
+
+## Does the Over-Time Pattern Vary Across Treatments?
+
+This section is the most relevant descriptive check for `H1` and `H2`.
+
+```{r fig.width=10, fig.height=5.6}
+ggplot(round_treatment_summary, aes(x = round_number, y = rate_probability, color = treatment_label)) +
+  geom_line(linewidth = 1) +
+  geom_point(size = 2) +
+  scale_x_continuous(breaks = 1:10) +
+  labs(
+    x = "Shown movie number",
+    y = "Probability of choosing rate",
+    color = "Treatment",
+    title = "Round-by-round rate probability by treatment cell"
+  ) +
+  theme_minimal(base_size = 13)
+```
+
+```{r}
+round_treatment_wide <- round_treatment_summary %>%
+  mutate(rate_probability = round(rate_probability, 3)) %>%
+  select(round_number, treatment_label, rate_probability) %>%
+  tidyr::pivot_wider(names_from = treatment_label, values_from = rate_probability) %>%
+  arrange(round_number)
+
+kable(round_treatment_wide, col.names = c("Round", names(round_treatment_wide)[-1]), align = "r")
+```
+
+## How Much Time per Decision Do People Spend from Movie 1 to Movie 10?
+
+```{r fig.width=8, fig.height=4.8}
+ggplot(round_summary, aes(x = round_number)) +
+  geom_line(aes(y = mean_decision_time_sec, color = "Mean"), linewidth = 1) +
+  geom_point(aes(y = mean_decision_time_sec, color = "Mean"), size = 2.2) +
+  geom_line(aes(y = median_decision_time_sec, color = "Median"), linewidth = 1, linetype = 2) +
+  geom_point(aes(y = median_decision_time_sec, color = "Median"), size = 2.2) +
+  scale_x_continuous(breaks = 1:10) +
+  scale_color_manual(values = c("Mean" = "#cf5c36", "Median" = "#3b6f8c")) +
+  labs(
+    x = "Shown movie number",
+    y = "Decision time (seconds)",
+    color = "",
+    title = "Decision times across rounds"
+  ) +
+  theme_minimal(base_size = 13)
+```
+
+The first round includes the transition from the pre-experimental stage into the main task, so it is usually longer than later rounds.
+
+## Do Left-Wing or Right-Wing Participants Spend More Time on Left- or Right-Wing Movies?
+
+The table and figure below use only left-coded and right-coded movies. The timing is the time spent on the decision page, regardless of whether the participant eventually chose `rate` or `skip`.
+
+```{r}
+kable(
+  time_side_summary %>%
+    mutate(
+      mean_decision_time_sec = round(mean_decision_time_sec, 2),
+      median_decision_time_sec = round(median_decision_time_sec, 2)
+    ),
+  col.names = c("Participant ideology", "Movie side", "Decisions", "Mean decision time (sec)", "Median decision time (sec)"),
+  align = c("l", "l", "r", "r", "r")
+)
+```
+
+```{r fig.width=8, fig.height=4.8}
+ggplot(time_side_summary, aes(x = movie_side, y = mean_decision_time_sec, fill = ideology_group)) +
+  geom_col(position = "dodge", width = 0.7) +
+  labs(
+    x = "Movie side",
+    y = "Mean decision time (seconds)",
+    title = "Decision time for left- and right-coded movies"
+  ) +
+  theme_minimal(base_size = 13) +
+  scale_fill_manual(values = c("left" = "#3b6f8c", "right" = "#cf5c36"), name = "Participant ideology")
+```
+
+## Exported Files
+
+This report also writes reusable CSVs to the project root:
+
+- `pilot_raw_participant_level.csv`
+- `pilot_raw_decision_level.csv`
+- `pilot_raw_treatment_summary.csv`
+- `pilot_raw_round_summary.csv`
